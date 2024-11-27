@@ -1,12 +1,14 @@
+/* Stile predefinito deli loghi */
 #nav-content-container a img{
     opacity: 0.8;
     transition: ease-in 0.3s;
 }
-
 #nav-content-container a img:hover{
     opacity: 1;
 }
 
+
+/* Stile predefinito dello scroll button */
 #scroll-btn{
     color: #121212;
     font-family: "Titillium Web";
@@ -16,42 +18,26 @@
     line-height: normal;
     text-transform: uppercase;
 }
+.stato2{
+    display: none;
+}
 
-.hero-image {
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    background-image: url(imgs/hero-auto.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 10;
-  }
-  
-.hero-image::before {
-    content: "";  
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-    z-index: 1;
-  }
 
 
 /* Stile predefinito per la navbar */
 .navbar {
-    padding-left: 20px; /* Esempio di padding a sinistra */
-    padding-right: 20px; /* Esempio di padding a destra */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    padding-bottom: 0;
+    height: 5rem;
+}
+.nav{
+    float: right;
 }
 
-.stato2{
-    display: none;
-}
+
+
 /* Media query per schermi con larghezza massima di 430px */
 @media (max-width: 430px) {
     .navbar {
@@ -63,16 +49,5 @@
     }
     .stato2{
         display: inline;
-    }
-}
-
-.nav{
-    float: right;
-}
-
-@media (max-widt: 400px){
-    .nav{
-        float: inline-start;
-        padding: -1vw;
     }
 }

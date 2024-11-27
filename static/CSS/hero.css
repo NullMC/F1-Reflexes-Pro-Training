@@ -1,0 +1,109 @@
+/* Stile predefinito dell'hero */
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    background-image: url(imgs/hero-auto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+/* Aggiunta del gradient tramite lo pseudoelemento */
+.hero-image::before {
+    content: "";  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    z-index: 1;
+}
+
+/* Media query per schermi con larghezza massima di 430px */
+@media (max-width: 430px) {
+    .hero-image{
+        height: 50vh;
+    }
+}
+
+
+.hero-sides{
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.left-side{
+    float: left;
+    min-width: 50%;
+}
+
+
+.right-side{
+    float: right;
+    min-width: 50%;
+}
+
+h1{
+    color: #000;
+    font-size: 10vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 92.5%;
+    text-transform: uppercase;
+}
+
+.hero-image .container-fluid{
+    padding: 0;
+    margin: 0;
+    margin-top: 20vh;
+    z-index: 3;
+}
+
+.hero-image .container-fluid svg{
+    width: 5rem;
+    display: inline;
+}
+
+@media (max-width: 430px){
+    .hero-image .container-fluid svg{
+        width: 3.5rem;
+
+    }
+}
+
+
+.row h2{
+    margin: auto auto auto 0;
+    color: #000;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.45rem;
+    text-transform: uppercase;
+
+    width: max-content;
+}
+
+.row p{
+    color: #000;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    letter-spacing: 0.05rem;
+}
+
+.right-side .img-container{
+    height: 100%;
+    background-image: url(imgs/bgless-car.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
