@@ -1,0 +1,10 @@
+#container-separatore{
+    margin-top: 50vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.separatore{
+    width: 100vw;
+    height: 2px;
+    background-color: #606060;
+}

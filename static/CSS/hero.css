@@ -107,3 +107,41 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+@media (max-width: 430px){
+    .right-side .img-container{
+        height: 50%;
+    }
+}
+
+.row .btn {
+    border-radius: 10px;
+    background: #FB2C2C;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: fit-content;
+    margin-left: 1vw;
+
+
+    color: #FFF;
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    transition: ease-in 0.1s;
+}
+
+.row .btn:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+
+    background-color: white;
+    border-color: #FB2C2C;;
+    border: solid 2px;
+    color: #FB2C2C;
+}
