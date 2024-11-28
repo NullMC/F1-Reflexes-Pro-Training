@@ -1,0 +1,55 @@
+.game-section{
+    margin-top: 20vh;
+}
+.streetlight-container{
+    display: flex;
+}
+.streetlight{
+    display: flex;
+    flex-flow: column;
+    width: 50px;
+    height: 175px;
+    background-color: #404040;
+    border-radius: 5px;
+    margin-right: 1vh;
+}
+
+.streetlight ul{
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.streetlight ul li{
+    margin-bottom: -100%;
+}
+
+@media (max-width: 450px){
+    .game-section .container-fluid{
+        display: flex;
+        flex-flow: column;
+    }
+    .game-section .container-fluid .left-side{
+        align-self: center;
+        width: fit-content;
+        margin-left: 0;
+    }
+    .game-section .container-fluid .right-side{
+        align-self: center;
+        width: 100%;
+        margin-top: 2vh;
+    }
+}
+
+.green{
+    fill: #2CFB3A;
+}
+
+.red{
+    fill: #FB2C2C;
+}
+
+.gray{
+    fill: #1b1b1b;
+}
