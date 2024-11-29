@@ -53,3 +53,34 @@
 .gray{
     fill: #1b1b1b;
 }
+
+.game-section .row .btn{
+    margin-top: 1vh;
+
+}
+
+.timer-hidden{
+    width: 50%;
+    color: #000;
+    font-size: 8vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 92.5%;
+    text-transform: uppercase;
+    align-self: flex-end;
+    display: none;
+}
+.timershowed{
+    width: 50%;
+    color: #000;
+    font-size: 8vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 92.5%;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+.game-section .container-fluid .left-side{
+    width: fit-content;
+}
