@@ -25,9 +25,7 @@
 #scroll-btn:hover{
     transform: translateY(-2px);
 }
-.stato2{
-    display: none;
-}
+
 
 
 
@@ -50,11 +48,5 @@
     .navbar {
         padding-left: 0; /* Rimuovi il padding a sinistra */
         padding-right: 0; /* Rimuovi il padding a destra */
-    }
-    .stato1{
-        display: none;
-    }
-    .stato2{
-        display: inline;
     }
 }
