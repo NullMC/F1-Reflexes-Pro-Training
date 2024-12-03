@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="static/CSS/index.css">
         <link rel="shortcut icon" href="static/CSS/imgs/favicon.png" type="image/x-icon">
 
+        <script src="static/Js/script.js" defer></script>
+
     </head>
     <body>
         <nav class="navbar bg-body-tertiary">
@@ -82,7 +84,7 @@
         </div>
 
         <div class="separatore"></div>
-        <div class="game-section">
+        <div class="game-section" id="game-section">
             <div class="container-fluid">
                 <div class="left-side">
                     <div class="streetlight-container">
@@ -233,9 +235,10 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row buttons">
                         <button type="button" class="btn btn-lg titillium-web-regular" id="start-button">start</button>
-                        <h1 class="timer-hidden" id="timer-hidden">00:00</h1>
+                        <button type="button" class="btn btn-lg titillium-web-regular hidden" id="stop-button">stop</button>
+                        <h1 class="timer-hidden" id="timer">00:00</h1>
                     </div>
 
                 </div>
@@ -279,11 +282,11 @@
                     <blockquote class="blockquote mb-0">
                         <p>Made with love by:</p>
                         <footer class="blockquote-footer">Frank -  <cite title="Source Title">from a school project to a professional web app</cite></footer>
+                        <footer class="blockquote-footer"><img src="static/CSS/imgs/resumee.png" alt="resumee"><cite title="Source Title"><a class="d-inline nav-link" href="https://franksitez.com/" target="_blank">franksitez.com</a></cite></footer>
                     </blockquote>
                 </div>
             </div>
         </footer>
               
-
     </body>
 </html>

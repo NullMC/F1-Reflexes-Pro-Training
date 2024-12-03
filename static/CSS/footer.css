@@ -20,3 +20,9 @@
 .card-body {
     padding: 15px;
 }
+
+blockquote footer img{
+    width: 20px;
+    height: auto;
+    margin-right: 1vw;
+}
