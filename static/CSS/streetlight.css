@@ -123,43 +123,6 @@
     letter-spacing: var(--Body-Medium-Tracking, 0.25px);
 }
 
-.personal-best{
-    margin-top: 5vh;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-}
-
-.personal-best li{
-    margin-right: 1vw;
-}
-
-
-.user-logo{
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-    background-color: #fb2c2c85;
-    color: rgba(251, 44, 44, 0.35);
-    text-align: center;
-
-    font-size: var(--Title-Medium-Size, 16px);
-    font-weight: 500;
-    line-height: var(--Title-Medium-Line-Height, 24px);
-    letter-spacing: var(--Title-Medium-Tracking, 0.15px);
-}
-
-.best-timer{
-    float: right;
-}
-
 @media (max-width: 700px){
     .game-section{
         margin-top: 10vh;

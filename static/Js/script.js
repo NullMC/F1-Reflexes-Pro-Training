@@ -14,9 +14,10 @@ scrollButton.addEventListener("click", scrollToId);
 
 
 
-//game code - start of section
+//game - start of section
 let startBtn = document.querySelector("#start-button");
 let stopBtn = document.querySelector("#stop-button");
+let timer = document.querySelector("#timer");
 
 function getRandomInt(min = 2000, max = 3000) {
     let number = Math.random();
@@ -37,11 +38,16 @@ function changeLights(lightIds, color) {
     });
 }
 
+let start;
+
 function startGame() {
     let redLights1 = ["l1", "l2", "l3", "l4", "l5"];
     let redLights2 = ["l6", "l7", "l8", "l9", "l10"];
     let redLights3 = ["l11", "l12", "l13", "l14", "l15"];
     let greenLights = ["l16", "l17", "l18", "l19", "l20"];
+
+    startBtn.classList.add("hidden")
+    stopBtn.classList.remove("hidden")
 
     setTimeout(() => {
         changeLights(redLights1, "red");
@@ -57,7 +63,25 @@ function startGame() {
 
     setTimeout(() => {
         changeLights(greenLights, "green");
+        start = new Date();
     }, greenDelay * 4);
 }
 
+function calcTimeDiff(){
+    let end = new Date();
+
+    let diff = end - start;
+
+    if (diff <= 0) {
+        console.log('You clicked too soon');
+
+    }
+    else if (diff > 0){
+        timer.innerHTML = diff + "ms";
+        timer.classList.remove("timer-hidden")
+
+    }
+}
+
 startBtn.addEventListener("click", startGame);
+stopBtn.addEventListener("click", calcTimeDiff);
