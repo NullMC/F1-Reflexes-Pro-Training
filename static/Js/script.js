@@ -18,6 +18,7 @@ scrollButton.addEventListener("click", scrollToId);
 let startBtn = document.querySelector("#start-button");
 let stopBtn = document.querySelector("#stop-button");
 let timer = document.querySelector("#timer");
+let refreshBtn = document.querySelector("#refresh-button");
 
 function getRandomInt(min = 2000, max = 3000) {
     let number = Math.random();
@@ -64,6 +65,7 @@ function startGame() {
     setTimeout(() => {
         changeLights(greenLights, "green");
         start = new Date();
+
     }, greenDelay * 4);
 }
 
@@ -74,14 +76,23 @@ function calcTimeDiff(){
 
     if (diff <= 0) {
         console.log('You clicked too soon');
+        refreshBtn.classList.remove("hidden")
+        stopBtn.classList.add("hidden")
 
     }
     else if (diff > 0){
         timer.innerHTML = diff + "ms";
         timer.classList.remove("timer-hidden")
+        refreshBtn.classList.remove("hidden")
+        stopBtn.classList.add("hidden")
 
     }
 }
 
+function refreshGame(){
+    location.reload();
+}
+
 startBtn.addEventListener("click", startGame);
 stopBtn.addEventListener("click", calcTimeDiff);
+refreshBtn.addEventListener("click", refreshGame);
