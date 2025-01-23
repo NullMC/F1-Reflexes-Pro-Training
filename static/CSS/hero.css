@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     height: 60vh;
-    background-image: url(imgs/hero-auto.png);
+    background-image: url(imgs/hero-auto.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +99,7 @@ h1{
 
 .right-side .img-container{
     height: 100%;
-    background-image: url(imgs/bgless-car.png);
+    background-image: url(imgs/bgless-car.webp);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
